@@ -61,7 +61,11 @@ Pour uploader le code :
 
 Lorsque l'ESP32 est connecté à un réseau, il peut être interrogé via les URLs suivantes :
 - **POST** `http://[adresse_ip_esp32]/setTemperature`
+  - Requête: `http://192.168.1.10/setTemperature?temperature=23.4&timestamp=1677649200`
+  - Réponse: `{"status": "success"}`
 - **GET** `http://[adresse_ip_esp32]/getTemperatures`
+  - Requête: `http://192.168.1.10/getTemperatures?startTime=1677649100&endTime=1677649300`
+  - Réponse: `[{"id": 1, "value": 23.4, "timestamp": 1677649200}]`
 
 ## 6. Explication détaillée du programme
 
