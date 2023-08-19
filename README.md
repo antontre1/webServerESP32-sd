@@ -24,6 +24,20 @@
   - SQLite ESP32
   - ArduinoJson
 
+
+## Schéma du NodeMCU ESP32
+
+```
+   +-----------------------------------------------------+
+   |          NodeMCU ESP32                               |
+   |                                                     |
+   |  EN (CHIP_PU)  |  3V3   |  GND   |  GND   |  VIn (5V)|
+   | IO36 (VP)      | IO39 (VN) | IO34 (A1) | IO35 (A2) | IO32 (A4) | IO33 (A5) |
+   | IO25 (DAC1)    | IO26 (DAC2) | IO27   | IO14   | IO12   | IO13 (RX2) | IO15 (TX2) |
+   | IO2            | IO0    | IO4    | IO16 (RX2) | IO17 (TX2) | IO5  | IO18 (SCK) |
+   | IO19 (MISO)    | IO21 (SDA) | IO22 (SCL) | IO23 (MOSI) | RXD (RX0) | TXD (TX0) |
+   +-----------------------------------------------------+
+```
 ## 2. Branchements sur l'ESP32 NodeMCU
 
 ```
