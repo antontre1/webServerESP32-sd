@@ -1,0 +1,40 @@
+
+# Compiled files
+*.o
+*.elf
+*.hex
+*.eep
+*.bin
+*.a
+*.d
+*.lss
+*.sym
+*.ldr
+
+# Object files for local libraries in the 'lib' folder
+lib/*.o
+
+# EEPROM and fuses files
+*.eep
+*.fuse
+
+# Include files that are automatically generated
+*.inc
+
+# Backup files
+*~
+*.swp
+*.bak
+*.tmp
+
+# Other files
+*.log
+*.lst
+*.map
+*.txt
+
+# Directories
+build/
+.vscode/
+__history/
+.idea/
