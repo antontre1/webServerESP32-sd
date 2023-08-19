@@ -77,3 +77,24 @@ Le programme crée un serveur web sur l'ESP32 pour interagir avec un capteur de 
 - `TemperatureManager`: Lecture du capteur DS18B20.
 - `WifiManager`: Gestion de la connexion WiFi.
 - `SDManager`: Interactions avec la carte SD.
+
+### Fonctions détaillées
+
+- `setup()`: Fonction exécutée une fois au démarrage de l'ESP32. Elle initialise le serveur, les gestionnaires et la connexion WiFi.
+- `loop()`: Fonction exécutée en boucle une fois que `setup()` a terminé. Elle gère le serveur et les appels API.
+- `ApiManager`: Cette classe gère les appels API pour enregistrer et récupérer des températures.
+  - `handleSetTemperature()`: Enregistre une nouvelle température dans la base de données.
+  - `handleGetTemperatures()`: Récupère les températures enregistrées entre deux horodatages.
+- `DatabaseManager`: Fournit des fonctions pour interagir avec la base de données SQLite.
+  - `db_init()`: Initialise la base de données.
+  - `db_exec()`: Exécute une requête SQL.
+  - `db_query_temperatures()`: Récupère les températures enregistrées entre deux horodatages.
+- `TemperatureManager`: Lit la température à partir du capteur DS18B20.
+  - `init()`: Initialise le capteur.
+  - `readTemperature()`: Lit et renvoie la température actuelle.
+- `WifiManager`: Gère la connexion WiFi.
+  - `connect()`: Se connecte au réseau WiFi configuré.
+- `SDManager`: Fournit des fonctions pour interagir directement avec la carte SD.
+  - `init()`: Initialise la carte SD.
+  - `openFile()`: Ouvre un fichier sur la carte SD.
+  - `closeFile()`: Ferme un fichier ouvert sur la carte SD.
