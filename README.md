@@ -50,6 +50,10 @@
    | GPIO19 ---------> | SD Card MISO
    | 3.3V -----------> | SD Card VCC
    | GND ------------> | SD Card GND
+   | SDA ------------> | RTC SDA
+   | SCL ------------> | RTC SCL
+   | 3.3V -----------> | RTC VCC
+   | GND ------------> | RTC GND
    +-------------------+
 ```
 
