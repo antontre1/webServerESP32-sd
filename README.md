@@ -24,7 +24,18 @@
   - SQLite ESP32
   - ArduinoJson
 
-![ESP32 NodeMCU Pinout](ESP32nodemcu-pinout.png)## 2. Branchements sur l'ESP32 NodeMCU
+![ESP32 NodeMCU Pinout](ESP32nodemcu-pinout.png)
+### RTC DS3231 Wiring
+- **SDA (RTC)** -> Pin SDA (ESP32)
+- **SCL (RTC)** -> Pin SCL (ESP32)
+- **VCC (RTC)** -> 3.3V or 5V (ESP32)
+- **GND (RTC)** -> GND (ESP32)
+
+### DS18B20 Temperature Sensor Wiring
+- **Signal (DS18B20)** -> A digital pin on the ESP32 (e.g., D4)
+- **VCC (DS18B20)** -> 3.3V or 5V (ESP32)
+- **GND (DS18B20)** -> GND (ESP32)
+## 2. Branchements sur l'ESP32 NodeMCU
 
 ```
    +-------------------+
